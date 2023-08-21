@@ -3,7 +3,10 @@
 <h1>List of movies</h1>
 <div>
 <% @lists.each do |list| %>
-<%= link_to list.name , list_path(list) %>
+
+    <p>
+      <%= link_to list.name , list_path(list) %>
+    </p>
 <% end %>
 </div>
 <div>
